@@ -1,0 +1,95 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: light rgb(151, 151, 211);
+}
+.App {
+  background: linear-gradient(to right, rgb(2, 2, 75), rgb(64, 33, 202));
+  /* background-color: blue; */
+  color: blanchedalmond;
+  padding: 1rem;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+.main {
+  margin: 2rem;
+  padding: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+.form > button {
+  grid-column: 1/-1;
+  background: blue;
+  color: burlywood;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  padding: 0.5rem;
+  margin-bottom: 12px;
+}
+
+.form > input {
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+.meme {
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  color: cornsilk;
+}
+
+.meme--image {
+  width: 100%;
+}
+
+.top-text,
+.bottom-text {
+  width: 80%;
+  word-break: break-all;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  font-size: 2rem;
+  overflow: hidden;
+  /* -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: black; */
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+.bottom-text {
+  bottom: 5px;
+}
+
+.top-text {
+  top: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
